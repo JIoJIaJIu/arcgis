@@ -1,0 +1,3 @@
+//>>built
+define("esri/graphicsUtils",["dojo/_base/lang","dojo/_base/array","dojo/has","./kernel","./geometry/Extent"],function(l,f,m,n,h){var k={graphicsExtent:function(d){var e,c,a=d[0].geometry,b=a.getExtent(),g=d.length;null===b&&(b=new h(a.x,a.y,a.x,a.y,a.spatialReference));for(c=1;g>c;c++)e=(a=d[c].geometry).getExtent(),null===e&&(e=new h(a.x,a.y,a.x,a.y,a.spatialReference)),b=b.union(e);return 0>b.getWidth()&&0>b.getHeight()?null:b},getGeometries:function(d){return f.map(d,function(e){return e.geometry})},
+_encodeGraphics:function(d,e){var c,a,b,g=[];return f.forEach(d,function(d,f){c=d.toJson();a={};c.geometry&&(b=e&&e[f],a.geometry=b&&b.toJson()||c.geometry);c.attributes&&(a.attributes=c.attributes);g[f]=a}),g}};return m("extend-esri")&&l.mixin(n,k),k});

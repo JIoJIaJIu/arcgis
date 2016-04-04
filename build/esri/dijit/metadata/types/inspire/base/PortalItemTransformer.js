@@ -1,0 +1,3 @@
+//>>built
+define("esri/dijit/metadata/types/inspire/base/PortalItemTransformer","dojo/_base/declare dojo/_base/lang dojo/has dojo/query dijit/registry ../../../types/iso/base/PortalItemTransformer ../../../../../kernel".split(" "),function(a,c,g,e,h,k,l){a=a([k],{postCreate:function(){this.inherited(arguments)},findInputWidget:function(a,c){if("tags"!==a)return this.inherited(arguments);var f,b,d=e(".gxeOtherKeywords",this.gxeDocument.rootDescriptor.domNode);return d&&0<d.length&&(b=e("[data-gxe-path\x3d'"+
+c+"']",d[0]),b&&1===b.length&&(f=h.byNode(b[0])))?f.inputWidget:null}});return g("extend-esri")&&c.setObject("dijit.metadata.types.inspire.base.PortalItemTransformer",a,l),a});

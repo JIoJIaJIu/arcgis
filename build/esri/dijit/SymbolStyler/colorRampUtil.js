@@ -1,0 +1,3 @@
+//>>built
+define("esri/dijit/SymbolStyler/colorRampUtil",["dojo/_base/array","dojox/gfx"],function(m,l){var d={createColorRamp:function(a){var b=a.node,c=a.width,e=a.height;a=d._stopsFromColors(a);b=l.createSurface(b,c,e);return b.createRect(b.getDimensions()).setFill({type:"linear",x1:0,y1:0,x2:0,y2:e,colors:a})},updateColorRamp:function(a){var b=a.ramp,c=b.getFill();return c.colors=d._stopsFromColors(a),b.setFill(c),b},_stopsFromColors:function(a){var b,c,e,g=a.colors;a=a.hasStops;var h=g.length,d=a?1/h:
+1/(h-1),k=[];b=g[0];if("object"==typeof b&&b.hasOwnProperty("offset")&&b.hasOwnProperty("color"))return g;for(var f=0;h>f;f++)b=f*d,c=g[h-1-f],k.push({offset:b,color:c}),a&&(e=(f+1)*d,k.push({offset:e,color:c}));return k}};return d});

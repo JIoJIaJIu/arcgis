@@ -1,0 +1,2 @@
+//>>built
+define("esri/srUtils",["./SpatialReference","./ImageSpatialReference","./kernel","./sniff","dojo/_base/lang"],function(e,f,g,h,k){function c(a){var b=!1;return a&&(a.ics||a.icsid)&&(b=!0),b}var d={isICS:c,createSpatialReference:function(a){var b=null;return a&&(b=c(a)?new f(a):new e(a)),b}};return h("extend-esri")&&k.mixin(g,d),d});

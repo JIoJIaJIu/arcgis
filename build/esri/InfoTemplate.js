@@ -1,0 +1,3 @@
+//>>built
+define("esri/InfoTemplate",["dojo/_base/declare","dojo/_base/lang","dojo/has","./kernel","./lang"],function(b,c,d,e,f){b=b(null,{declaredClass:"esri.InfoTemplate",constructor:function(a,b){a&&c.isObject(a)&&!c.isFunction(a)?c.mixin(this,a):(this.title=a||"${*}",this.content=b||"${*}")},setTitle:function(a){return this.title=a,this},setContent:function(a){return this.content=a,this},toJson:function(){return f.fixJson({title:this.title,content:this.content})}});return d("extend-esri")&&(e.InfoTemplate=
+b),b});

@@ -1,0 +1,3 @@
+//>>built
+define("esri/tasks/geoenrichment/taskHelper",["dojo/_base/lang","dojo/Deferred","dojo/json","../../request","../../extend"],function(g,n,h,p,k){var f={invokeMethod:function(b,d,a,f,g,h){function k(a){var c;try{c=f(a)}catch(d){return void l(d)}e&&e.resolve(c);b[g](c)}function l(a){e&&e.reject(a);b[h](a)}var c=null,e=null,e=new n(function(){c&&(c.cancel(),c=null)});try{var m=a?a():{};m.f="json";b.token&&(m.token=b.token);c=p({url:b.url+d,content:m,handleAs:"json"});c.then(k,l)}catch(q){l(q)}return e.promise},
+jsonToRest:function(b){var d={},a;for(a in b)d[a]=g.isString(b[a])?b[a]:h.stringify(b[a]);return d},throwEmptyResponse:function(){throw Error("Geoenrichment service returned empty response");}};return k("esri.tasks.geoenrichment.taskHelper",f),f});

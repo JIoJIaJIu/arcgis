@@ -1,0 +1,2 @@
+//>>built
+define("esri/dijit/metadata/form/OpenElement",["dojo/_base/declare","dojo/_base/lang","dojo/has","../../../kernel","./Element"],function(a,b,c,d,e){a=a(e,{noToggle:!0});return c("extend-esri")&&b.setObject("dijit.metadata.form.OpenElement",a,d),a});

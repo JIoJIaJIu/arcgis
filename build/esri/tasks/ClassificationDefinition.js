@@ -1,0 +1,3 @@
+//>>built
+define("esri/tasks/ClassificationDefinition",["dojo/_base/declare","dojo/_base/lang","dojo/has","../kernel"],function(a,b,c,d){a=a(null,{declaredClass:"esri.tasks.ClassificationDefinition",type:null,baseSymbol:null,colorRamp:null,toJson:function(){var a={};return this.baseSymbol&&b.mixin(a,{baseSymbol:this.baseSymbol.toJson()}),this.colorRamp&&!b.isString(this.colorRamp)&&b.mixin(a,{colorRamp:this.colorRamp.toJson()}),a}});return c("extend-esri")&&b.setObject("tasks.ClassificationDefinition",a,d),
+a});

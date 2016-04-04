@@ -1,0 +1,3 @@
+//>>built
+define("esri/layers/CodedValueDomain","dojo/_base/declare dojo/_base/lang dojo/_base/array dojo/has ../kernel ../lang ./Domain".split(" "),function(a,b,d,e,f,g,h){a=a([h],{declaredClass:"esri.layers.CodedValueDomain",constructor:function(c){c&&b.isObject(c)&&(this.codedValues=c.codedValues)},getName:function(c){var a;return d.some(this.codedValues,function(b){return b.code==c&&(a=b.name),!!a}),a},toJson:function(){var a=this.inherited(arguments);return a.codedValues=b.clone(this.codedValues),g.fixJson(a)}});
+return e("extend-esri")&&b.setObject("layers.CodedValueDomain",a,f),a});

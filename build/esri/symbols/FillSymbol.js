@@ -1,0 +1,3 @@
+//>>built
+define("esri/symbols/FillSymbol","dojo/_base/declare dojo/_base/lang dojo/has ../kernel ./Symbol ./SimpleLineSymbol".split(" "),function(b,c,d,e,f,g){b=b(f,{declaredClass:"esri.symbol.FillSymbol",constructor:function(a){a&&c.isObject(a)&&a.outline&&(this.outline=new g(a.outline))},setOutline:function(a){return this.outline=a,this},toJson:function(){var a=this.inherited("toJson",arguments);return this.outline&&(a.outline=this.outline.toJson()),a}});return d("extend-esri")&&c.setObject("symbol.FillSymbol",
+b,e),b});

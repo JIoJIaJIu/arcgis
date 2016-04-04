@@ -1,0 +1,3 @@
+//>>built
+define("esri/plugins/spatialIndex",["../process/SpatialIndex","dojo/Deferred"],function(e,f){return{add:function(a,b){if(b=b||{},a.spatialIndex)return a.spatialIndex;if(!("spatialIndex"in b)){var d=new f;b.autostart=!1;a.spatialIndex=new e(b);var c=a.spatialIndex;return-1<a.declaredClass.indexOf("Map")?c.setMap(a):c.addLayer(a),c.on("start",function(){d.resolve(c)}),c.start(),d}return!1!==b.spatialIndex?(a.spatialIndex=b.spatialIndex,a.spatialIndex):void 0},remove:function(a){var b=a.spatialIndex;
+b&&(-1<a.declaredClass.indexOf("Map")?b.unsetMap():b.removeLayer(a),a.spatialIndex=void 0)}}});

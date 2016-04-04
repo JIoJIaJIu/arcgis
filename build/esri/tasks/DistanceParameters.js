@@ -1,0 +1,3 @@
+//>>built
+define("esri/tasks/DistanceParameters","dojo/_base/declare dojo/_base/lang dojo/_base/json dojo/has ../kernel ../geometry/jsonUtils".split(" "),function(c,f,d,g,h,e){c=c(null,{declaredClass:"esri.tasks.DistanceParameters",geometry1:null,geometry2:null,distanceUnit:null,geodesic:null,toJson:function(){var b={},a=this.geometry1;a&&(b.geometry1=d.toJson({geometryType:e.getJsonType(a),geometry:a}));a=this.geometry2;return a&&(b.geometry2=d.toJson({geometryType:e.getJsonType(a),geometry:a})),b.sr=d.toJson(this.geometry1.spatialReference.toJson()),
+this.distanceUnit&&(b.distanceUnit=this.distanceUnit),this.geodesic&&(b.geodesic=this.geodesic),b}});return g("extend-esri")&&f.setObject("tasks.DistanceParameters",c,h),c});

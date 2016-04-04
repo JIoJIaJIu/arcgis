@@ -1,0 +1,4 @@
+//>>built
+require({cache:{"url:esri/dijit/metadata/base/templates/TabButton.html":'\x3cdiv class\x3d"gxeTabButton standard" \n  data-dojo-attach-point\x3d"labelNode"\n  data-dojo-attach-event\x3d"onclick: _onClick"\x3e\n  ${label}\n\x3c/div\x3e\n'}});
+define("esri/dijit/metadata/base/TabButton","dojo/_base/declare dojo/_base/lang dojo/dom-attr dojo/has ./Templated dojo/text!./templates/TabButton.html ../../../kernel".split(" "),function(a,b,g,c,d,e,f){a=a([d],{label:null,templateString:e,postCreate:function(){this.inherited(arguments)},_onClick:function(){this.onClick(this)},onClick:function(){},setLabel:function(a){"undefined"==typeof a&&(a=null);this.label=a;this.setI18nNodeText(this.labelNode,a)}});return c("extend-esri")&&b.setObject("dijit.metadata.base.TabButton",
+a,f),a});

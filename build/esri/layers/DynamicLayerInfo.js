@@ -1,0 +1,3 @@
+//>>built
+define("esri/layers/DynamicLayerInfo","dojo/_base/declare dojo/_base/lang dojo/has ../kernel ../lang ./LayerInfo ./LayerMapSource ./LayerDataSource".split(" "),function(a,d,e,f,g,h,c,k){a=a(h,{declaredClass:"esri.layers.DynamicLayerInfo",defaultVisibility:!0,parentLayerId:-1,maxScale:0,minScale:0,constructor:function(b){if(b){var a;b.source?a="mapLayer"===b.source.type?new c(b.source):new k(b.source):(a=new c,a.mapLayerId=this.id);this.source=a}},toJson:function(){var a=this.inherited(arguments);
+return a.source=this.source&&this.source.toJson(),g.fixJson(a)}});return e("extend-esri")&&d.setObject("layers.DynamicLayerInfo",a,f),a});

@@ -1,0 +1,2 @@
+//>>built
+define("esri/tasks/geoenrichment/studyAreaFromJson",["./GeometryStudyArea","./AddressStudyArea","./StandardGeographyStudyArea","../../extend"],function(c,d,e,f){var b=function(a){return a.geometry?new c(a):a.address?new d(a):a.layer?new e(a):void 0};return f("esri.tasks.geoenrichment.studyAreaFromJson",b),b});
