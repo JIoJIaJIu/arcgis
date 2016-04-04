@@ -1,0 +1,24 @@
+{
+  "name": "arcgis",
+  "version": "0.0.1",
+  "description": "Meteor Esri ArcGis API",
+  "main": "package.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JIoJIaJIu/arcgis.git"
+  },
+  "keywords": [
+    "esri",
+    "arcgis",
+    "meteor"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JIoJIaJIu/arcgis/issues"
+  },
+  "homepage": "https://github.com/JIoJIaJIu/arcgis#readme"
+}
