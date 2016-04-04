@@ -1,0 +1,25 @@
+{
+  "name": "arcgis",
+  "main": "package.js",
+  "homepage": "https://github.com/JIoJIaJIu/arcgis",
+  "authors": [
+    "Guro Bokum <jiojiajiu@gmail.com>"
+  ],
+  "description": "Esri Arcgis JS API",
+  "moduleType": [],
+  "keywords": [
+    "arcgis",
+    "esri"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "arcgis-js-api": "^3.16.0"
+  }
+}
