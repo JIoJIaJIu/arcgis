@@ -4,7 +4,9 @@
   "description": "Meteor Esri ArcGis API",
   "main": "package.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "grunt build --force",
+    "clean": "grunt clean"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,10 @@
   "bugs": {
     "url": "https://github.com/JIoJIaJIu/arcgis/issues"
   },
-  "homepage": "https://github.com/JIoJIaJIu/arcgis#readme"
+  "homepage": "https://github.com/JIoJIaJIu/arcgis#readme",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-dojo": "^1.1.1"
+  }
 }

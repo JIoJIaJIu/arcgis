@@ -11,7 +11,7 @@
 var profile = {
   // `basePath` is relative to the directory containing this profile file; in this case, it is being set to the
   // src/ directory, which is the same place as the `baseUrl` directory in the loader configuration.
-  basePath: './src',
+  basePath: '..',
 
   // Builds a new release.
   action: 'release',
@@ -33,17 +33,33 @@ var profile = {
 
   // A list of packages that will be built. The same packages defined in the loader should be defined here in the
   // build profile.
-  packages: [
-    'dijit',
-    'dojo',
-    'dojox',
-    'dstore',
-    'dgrid',
-    'xstyle',
-    'put-selector',
-    'esri', {
+  packages: [{
+      name: 'dojo',
+      location: 'bower_components/dojo'
+    }, {
+      name: 'dijit',
+      location: 'bower_components/dijit'
+    }, {
+      name: 'dojox',
+      location: 'bower_components/dojox'
+    }, {
+      name: 'dstore',
+      location: 'bower_components/dstore'
+    }, {
+      name: 'dgrid',
+      location: 'bower_components/dgrid'
+    }, {
+      name: 'xstyle',
+      location: 'bower_components/xstyle'
+    }, {
+      name: 'put-selector',
+      location: 'bower_components/put-selector'
+    }, {
+      name: 'esri',
+      location: 'bower_components/arcgis-js-api'
+    }, {
       name: 'moment',
-      location: 'moment',
+      location: 'bower_components/moment',
       main: 'moment',
       trees: [
           // don't bother with .hidden, tests, min, src, and templates
@@ -83,8 +99,6 @@ var profile = {
       boot: true,
       customBase: true,
       include: [
-        // include the app, set accordingly for your application
-        'app/main',
         // dependencies of esri/map that will be requested if not included
         'dojox/gfx/path',
         'dojox/gfx/svg',
